@@ -1,208 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
 
-  <link rel="stylesheet" href="style.css"/>
-  <script src="https://kit.fontawesome.com/0d367c7485.js" crossorigin="anonymous"></script>
-</head>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0d367c7485.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<body>
+  <body>
+    <!-- ================= NAV ================= -->
+    <header id="navbar">
+      <img src="img/logo.png" class="logo" alt="logo" />
 
-<!-- ================= NAV ================= -->
-<header id="navbar">
+      <i class="fas fa-bars" id="openMenu"></i>
 
-  <img src="img/logo.png" class="logo" alt="logo"/>
+      <ul id="sidemenu">
+        <i class="fas fa-times" id="closeMenu"></i>
 
-  <i class="fas fa-bars" id="openMenu"></i>
+        <li><a href="#header">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portifolio">Work</a></li>
+        <li><a href="#contact">Contact</a></li>
 
-  <ul id="sidemenu">
-    <i class="fas fa-times" id="closeMenu"></i>
+        <li>
+          <a href="img/cv.pdf" download class="cv-btn">Download CV</a>
+        </li>
+      </ul>
+    </header>
 
-    <li><a href="#header">Home</a></li>
-    <li><a href="#about">About</a></li>
-    <li><a href="#portifolio">Work</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <!-- ================= HERO ================= -->
+    <section id="header">
+      <div class="hero">
+        <p class="hero-subtitle">Junior Web Application Developer</p>
 
-    <li>
-      <a href="img/cv.pdf" download class="cv-btn">Download CV</a>
-    </li>
-  </ul>
-</header>
+        <h1 class="hero-title">
+          Hi, I'm <span>Mohammed</span><br />
+          I build modern web applications
+        </h1>
 
-<!-- ================= HERO ================= -->
-<section id="header">
-  <div class="hero">
-
-    <p class="hero-subtitle">Junior Web Application Developer</p>
-
-    <h1 class="hero-title">
-      Hi, I'm <span>Mohammed</span><br/>
-      I build modern web applications
-    </h1>
-
-    <p class="hero-description">
-      Backend developer specialized in Java, Spring Boot and REST APIs,
-      with frontend experience in modern responsive UI design.
-    </p>
-
-  </div>
-</section>
-
-<!-- ================= ABOUT ================= -->
-<section id="about">
-
-  <h1 class="section-title">About Me</h1>
-  <p class="section-subtitle">Who I am & what I do</p>
-
-  <div class="about-grid">
-
-    <div class="about-img">
-      <img src="img/3.jpg" alt="profile"/>
-    </div>
-
-    <div class="about-content">
-
-      <p class="about-text">
-        I am a junior developer passionate about building scalable backend systems
-        and clean UI experiences. I enjoy solving problems and creating efficient web applications.
-      </p>
-
-      <div class="about-cards">
-        <div class="about-card"><i class="fa-solid fa-code"></i> Backend</div>
-        <div class="about-card"><i class="fa-solid fa-database"></i> SQL</div>
-        <div class="about-card"><i class="fa-solid fa-globe"></i> Web Apps</div>
+        <p class="hero-description">
+          Backend developer specialized in Java, Spring Boot and REST APIs, with
+          frontend experience in modern responsive UI design.
+        </p>
       </div>
+    </section>
 
-      <div class="skills">
-        <span>Java</span>
-        <span>Spring Boot</span>
-        <span>SQL</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JavaScript</span>
+    <!-- ================= ABOUT ================= -->
+    <section id="about">
+      <h1 class="section-title">About Me</h1>
+      <p class="section-subtitle">Who I am & what I do</p>
+
+      <div class="about-grid">
+        <div class="about-img">
+          <img src="img/3.jpg" alt="profile" />
+        </div>
+
+        <div class="about-content">
+          <p class="about-text">
+            I am a junior developer passionate about building scalable backend
+            systems and clean UI experiences. I enjoy solving problems and
+            creating efficient web applications.
+          </p>
+
+          <div class="about-cards">
+            <div class="about-card">
+              <i class="fa-solid fa-code"></i> Backend
+            </div>
+            <div class="about-card">
+              <i class="fa-solid fa-database"></i> SQL
+            </div>
+            <div class="about-card">
+              <i class="fa-solid fa-globe"></i> Web Apps
+            </div>
+          </div>
+
+          <div class="skills">
+            <span>Java</span>
+            <span>Spring Boot</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
       </div>
+    </section>
 
-    </div>
+    <!-- ================= WORK ================= -->
+    <section id="portifolio">
+      <h1 class="section-title">My Work</h1>
+      <p class="section-subtitle">Projects I’ve built</p>
 
-  </div>
-</section>
+      <div class="work-list">
+        <div class="work">
+          <img src="img/1.jpg" alt="project" />
+          <div class="work-overlay">
+            <h3>Online Shop</h3>
+            <div class="work-buttons">
+              <a
+                href="https://your-live-demo-link.com"
+                target="_blank"
+                class="btn demo"
+              >
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
 
-<!-- ================= WORK ================= -->
-<section id="portifolio">
+              <a
+                href="https://github.com/Al-issawi/IronHack/tree/e5d2de83a56efb22ea38771b1c4392cfb0f0da55/EjercicioHTML-css-2"
+                target="_blank"
+                class="btn github"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
 
-  <h1 class="section-title">My Work</h1>
-  <p class="section-subtitle">Projects I’ve built</p>
+        <div class="work">
+          <img src="img/2.jpg" alt="project" />
+          <div class="work-overlay">
+            <h3>Music</h3>
+            <div class="work-buttons">
+              <a
+                href="https://your-live-demo-link.com"
+                target="_blank"
+                class="btn demo"
+              >
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
 
-  <div class="work-list">
+              <a
+                href="https://github.com/Al-issawi/IronHack/tree/e5d2de83a56efb22ea38771b1c4392cfb0f0da55/semana-1-dia-4"
+                target="_blank"
+                class="btn github"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
 
-    <div class="work">
-      <img src="img/1.jpg" alt="project"/>
-      <div class="work-overlay">
-        <h3>Online Shop</h3>
-        <div class="work-buttons">
+        <div class="work">
+          <img src="img/4.jpg" alt="project" />
+          <div class="work-overlay">
+            <h3>Form</h3>
+            <div class="work-buttons">
+              <a
+                href="https://your-live-demo-link.com"
+                target="_blank"
+                class="btn demo"
+              >
+                <i class="fas fa-globe"></i> Live Demo
+              </a>
 
-  <a href="https://your-live-demo-link.com" target="_blank" class="btn demo">
-    <i class="fas fa-globe"></i> Live Demo
-  </a>
-
-  <a href="https://github.com/Al-issawi/IronHack/tree/e5d2de83a56efb22ea38771b1c4392cfb0f0da55/EjercicioHTML-css-2" target="_blank" class="btn github">
-    <i class="fab fa-github"></i> GitHub
-  </a>
-
-</div>
+              <a
+                href="https://github.com/Al-issawi/IronHack/tree/e5d2de83a56efb22ea38771b1c4392cfb0f0da55/HTML-CSS-semana-4/form-dia2"
+                target="_blank"
+                class="btn github"
+              >
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </section>
 
-    <div class="work">
-      <img src="img/2.jpg" alt="project"/>
-      <div class="work-overlay">
-        <h3>Music</h3>
-       <div class="work-buttons">
+    <!-- ================= CONTACT ================= -->
+    <section id="contact">
+      <h1 class="section-title">Contact</h1>
+      <p class="section-subtitle">Let’s work together</p>
 
-  <a href="https://your-live-demo-link.com" target="_blank" class="btn demo">
-    <i class="fas fa-globe"></i> Live Demo
-  </a>
+      <div class="contact-center">
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/b57511a1284c6dc444d42ae1e02e5a82"
+          method="POST"
+        >
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://al-issawi.github.io/portfolio/thanks.html"
+          />
 
-  <a href="https://github.com/Al-issawi/IronHack/tree/e5d2de83a56efb22ea38771b1c4392cfb0f0da55/semana-1-dia-4" target="_blank" class="btn github">
-    <i class="fab fa-github"></i> GitHub
-  </a>
+          <input
+            type="hidden"
+            name="_subject"
+            value="Nuevo mensaje del portfolio"
+          />
 
-</div>
+          <div class="form-row">
+            <input type="text" name="name" placeholder="Name" required />
+            <input type="email" name="email" placeholder="Email" required />
+          </div>
+
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            required
+          ></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
       </div>
-    </div>
+    </section>
 
-    <div class="work">
-      <img src="img/4.jpg" alt="project"/>
-      <div class="work-overlay">
-        <h3>Form</h3>
-       <div class="work-buttons">
+    <!-- ================= MOBILE MENU SCRIPT ================= -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const menu = document.getElementById("sidemenu");
+        const openBtn = document.getElementById("openMenu");
+        const closeBtn = document.getElementById("closeMenu");
 
-  <a href="https://your-live-demo-link.com" target="_blank" class="btn demo">
-    <i class="fas fa-globe"></i> Live Demo
-  </a>
+        openBtn.addEventListener("click", () => {
+          menu.classList.add("active");
+        });
 
-  <a href="https://github.com/Al-issawi/IronHack/tree/e5d2de83a56efb22ea38771b1c4392cfb0f0da55/HTML-CSS-semana-4/form-dia2" target="_blank" class="btn github">
-    <i class="fab fa-github"></i> GitHub
-  </a>
-
-</div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section id="contact">
-
-  <h1 class="section-title">Contact</h1>
-  <p class="section-subtitle">Let’s work together</p>
-
-  <div class="contact-center">
-
-    <form class="contact-form" action="https://formsubmit.co/b57511a1284c6dc444d42ae1e02e5a82"   method="POST">
-
-  <input type="hidden" name="_captcha" value="false">
-  <input type="hidden" name="_next" value="https://al-issawi.github.io/portfolio/thanks.html">
-  
-  <input type="hidden" name="_subject" value="Nuevo mensaje del portfolio">
-
-  <div class="form-row">
-    <input type="text" name="name" placeholder="Name" required/>
-    <input type="email" name="email" placeholder="Email" required/>
-  </div>
-
-  <textarea name="message" placeholder="Your Message"  required></textarea>
-
-  <button type="submit">Send Message</button>
-
-</form>
-
-   
-  </div>
-</section>
-
-<!-- ================= MOBILE MENU SCRIPT ================= -->
-<script>
-document.addEventListener("DOMContentLoaded", () => {
-
-  const menu = document.getElementById("sidemenu");
-  const openBtn = document.getElementById("openMenu");
-  const closeBtn = document.getElementById("closeMenu");
-
-  openBtn.addEventListener("click", () => {
-    menu.classList.add("active");
-  });
-
-  closeBtn.addEventListener("click", () => {
-    menu.classList.remove("active");
-  });
-
-});
-</script>
-
-</body>
+        closeBtn.addEventListener("click", () => {
+          menu.classList.remove("active");
+        });
+      });
+    </script>
+  </body>
 </html>

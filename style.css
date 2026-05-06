@@ -81,7 +81,6 @@ section {
 }
 
 /* ================= HERO ================= */
-/* ================= HERO (CLEAN PROFESSIONAL STYLE) ================= */
 #header {
   height: 100vh;
   display: flex;
@@ -329,6 +328,7 @@ section {
 }
 
 /* ================= MOBILE ================= */
+/* ================= MOBILE ================= */
 @media (max-width: 768px) {
 
   .about-grid {
@@ -358,37 +358,15 @@ section {
 
   /* ================= MOBILE MENU ================= */
 
-#openMenu,
-#closeMenu {
-  display: none;
-  font-size: 26px;
-  cursor: pointer;
-  color: white;
-}
-
-/* default desktop */
-#sidemenu {
-  display: flex;
-  gap: 20px;
-  list-style: none;
-}
-#sidemenu li {
-  opacity: 0;
-  transform: translateX(20px);
-  transition: 0.3s;
-}
-
-#sidemenu.active li {
-  opacity: 1;
-  transform: translateX(0);
-}
-/* mobile */
-@media (max-width: 768px) {
-
+  /* show hamburger */
   #openMenu {
     display: block;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
   }
 
+  /* side menu */
   #sidemenu {
     position: fixed;
     top: 0;
@@ -403,15 +381,37 @@ section {
     z-index: 9999;
   }
 
+  /* active = open */
   #sidemenu.active {
     right: 0;
   }
 
+  /* animation */
+  #sidemenu li {
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 0.3s;
+  }
+
+  #sidemenu.active li {
+
+    margin-left: 30px;
+    font-size: medium;  
+    font-weight: 800;
+      opacity: 1;
+    transform: translateX(1);
+  }
+
+  /* close button */
   #closeMenu {
     display: block;
     position: absolute;
     top: 20px;
     left: 20px;
+    font-size: 26px;
+    cursor: pointer;
+    color: white;
   }
 }
-}
+
+
